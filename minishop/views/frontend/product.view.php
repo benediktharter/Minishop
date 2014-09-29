@@ -19,7 +19,7 @@
     $html ='<div id="shopProduct">
 
               <!-- share and back -->
-              <div class="col-md-12">
+              <div class="col-md-12 clearfix">
 
                 <!-- breadcrumb -->
                 <ol class="breadcrumb pull-left">
