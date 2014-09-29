@@ -196,7 +196,7 @@
 
                         '<div class="checkbox">'.
                           '<label>'.
-                          Form::checkbox('imnotarobot').Html::nbsp(2).'Comprobar sin no es un Robot'.
+                          Form::checkbox('imnotarobot').__('Check if are not a robot *','minishop').
                           '</label>'.
                         '</div>'.
 
