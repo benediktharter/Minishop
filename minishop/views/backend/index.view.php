@@ -7,10 +7,6 @@
         <?php echo Html::anchor( __('Comments', 'minishop'),'index.php?id=minishop&action=comments',array('class' => 'btn btn-default')); ?>
     </div>
 
-
-    <?php if (Notification::get('success')) Alert::success(Notification::get('success')); ?>
-
-
     <!-- Filter -->
     <div class="form-group col-sm-12 col-md-6">
         <div class="input-group">
