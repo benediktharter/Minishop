@@ -1,0 +1,110 @@
+
+
+/*  Table
+======================*/
+.simpleCart_input{width:25px!important;}
+.simpleCart_items > table{
+  max-width:100%;
+  background-color:transparent;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.simpleCart_items > table{
+  width:100%;
+  margin-bottom:20px;
+}
+.simpleCart_items > table th,
+.simpleCart_items > table td{
+  padding:8px;
+  line-height:20px;
+  text-align:left;
+  vertical-align:top;
+  border-top:1px solid #eee;
+}
+.simpleCart_items > table .headerRow{color:#999;}
+.simpleCart_items > table .itemRow{color:#999;}
+.simpleCart_items > table tbody tr .item-tumb{text-align:center!important;}
+.simpleCart_items > table tbody tr .item-tumb img{width:90px;text-align:center!important;}
+.simpleCart_items > table tbody tr .item-remove{width:90px;text-align:center!important;}
+.simpleCart_items > table .itemRow > .item-remove a {
+  text-decoration: none;
+  padding: 5px;
+  font-weight: 400;
+  background: #F55;
+  color: #FFF;
+  font-family: "lato",sans-serif;
+  transition: all .5s;
+}
+.simpleCart_items > table .itemRow > .item-remove a:hover{
+  background: #FD8787;
+  color: #FFF;
+  transition:all .5s;
+}
+.simpleCart_items > table th{font-weight:bold;}
+.simpleCart_items > table tbody{border-top:2px solid #eee;}
+.simpleCart_items > table{background-color:#ffffff;}
+.simpleCart_items > table{
+  border:1px solid #eee;
+  border-collapse:separate;
+  *border-collapse:collapse;
+  border-left:0;
+}
+
+.simpleCart_items > table th,
+.simpleCart_items > table td{border-left:1px solid #eee;}
+.simpleCart_items > table tfoot + tbody:last-child tr:last-child td:first-child{
+  -webkit-border-bottom-left-radius:0;
+  border-bottom-left-radius:0;
+  -moz-border-radius-bottomleft:0;
+}
+.simpleCart_items > table tfoot + tbody:last-child tr:last-child td:last-child{
+  -webkit-border-bottom-right-radius:0;
+  border-bottom-right-radius:0;
+  -moz-border-radius-bottomright:0;
+}
+
+
+
+
+/*    Rating
+===============================*/
+#rateStatus{margin: 0;}
+#rateMe{margin: 0;}
+#rateMe .on{background:url(@site_url/plugins/minishop/lib/img/stars.png) 0 0 repeat-x;}
+#rateMe a{
+  float:left;
+  background:url(@site_url/plugins/minishop/lib/img/stars.png) 0 -16px repeat-x;
+  width:16px;
+  height:16px;
+  cursor:pointer;
+}
+#rateMe a:hover{background:url(@site_url/plugins/minishop/lib/img/stars.png) 0 0 repeat-x;cursor:pointer;}
+#ratingSaved{display:none;}
+
+
+/*  Rating comments
+====================*/
+.rating {overflow: hidden;display: inline-block;margin-top: 5px;}
+.rating-input {position: absolute; left: 0; top: -50px;display:none;}
+.rating:hover .rating-star:hover,.rating:hover .rating-star:hover ~ .rating-star,.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+.rating-star,.rating:hover .rating-star {
+  float: right;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(@site_url/plugins/minishop/lib/img/stars.png) 0 -16px;
+}
+
+
+/*  Show rating
+==============================*/
+.stars,.stars span {
+    display: inline-block;
+    background: url(@site_url/plugins/minishop/lib/img/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+.stars span {background-position: 0 0;}
+
