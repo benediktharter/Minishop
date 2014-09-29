@@ -3,7 +3,7 @@ echo
 '<p>'.Option::get('ms_befchk').'</p>'.
 
 '<p><a href="javascript:void(0);" class="ms_checkout simpleCart_checkout btn btn-default">
-  <span class="pay"></span>Ir a Paypal</a></p>'.
+  <span class="pay"></span>'.__('Paypal','minishop').'</a></p>'.
   
 '<script src="'.Site::url().'/plugins/minishop/lib/js/simplecart.min.js"></script>'.
 '<script src="'.Site::url().'/plugins/minishop/lib/js/minishop.js"></script>'.
