@@ -16,3 +16,7 @@ Cart module  plugin for Monstra cms
 - Add Cart code in menu  
 
         <?php echo miniShop::getInfo(); ?>
+        
+
+
+**Demo** [Here](http://nakome.com/monstra/shop)
