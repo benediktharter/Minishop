@@ -7,7 +7,7 @@
  *  @subpackage Plugins
  *  @author Moncho Varela / Nakome
  *  @copyright 2013-2014 Moncho Varela / Nakome
- *  @version 1.0.0
+ *  @version 2.0.0
  *
  */
 
@@ -15,7 +15,7 @@
   Plugin::register( __FILE__,
                 __('Minishop', 'minishop'),
                 __('Mini shop module', 'minishop'),
-                '1.0.0',
+                '2.0.0',
                 'Nakome',
                 'http://nakome.com/','minishop');
 
