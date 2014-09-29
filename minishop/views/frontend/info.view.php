@@ -8,15 +8,10 @@ $html = '
    <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-    <li><a><strong>Items: </strong><span class="simpleCart_quantity"></span></a></li>
-    <li><a><strong>Total: </strong><span class="simpleCart_total"></span></a></li>
-    <li><a class="viewCart" href="'.Option::get('siteurl').DS.miniShop::$shop.DS.'items" class="product-view">'.__('View cart','minishop').'</a></li>'.
+    <li><a><span class="label label-info">Items: </span><span class="label label-danger simpleCart_quantity"></span></a></li>
+    <li><a><span class="label label-info">Total: </span><span class="label label-danger simpleCart_total"></span></a></li>
+    <li><a class="btn btn-link btn-sm viewCart" href="'.Option::get('siteurl').DS.miniShop::$shop.DS.'items" class="product-view">'.__('View cart','minishop').'</a></li>'.
   '</ul>
 </li>';
 echo $html;
 ?>
-
-
-
-
-
