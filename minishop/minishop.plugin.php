@@ -224,8 +224,10 @@ class miniShop extends Frontend{
                     
                     }else{
                     die('<div class="col-md-6"><div class="well">'.
-                        '<p>Eres un Robot ? '.
-                        '<a class="btn btn-default" href="#" onclick="window.history.back(1);return false;" >Volver</a></p>'.
+                        '<p'.__('You are a robot ?','minishop').
+                        '<a class="btn btn-default" href="#" onclick="window.history.back(1);return false;" >'.
+                        	__('Back','minishop').
+                        '</a></p>'.
                       '</div></div>');
                   }
                 } else { 
@@ -508,8 +510,10 @@ class miniShop extends Frontend{
 
                 }else{
                     die('<div class="col-md-6"><div class="well">'.
-                        '<p>Eres un Robot ? '.
-                        '<a class="btn btn-default" href="#" onclick="window.history.back(1);return false;" >Volver</a></p>'.
+                        '<p'.__('You are a robot ?','minishop').
+                        '<a class="btn btn-default" href="#" onclick="window.history.back(1);return false;" >'.
+                        	__('Back','minishop').
+                        '</a></p>'.
                       '</div></div>');
                 }
               } else { die('csrf detected!'); }
