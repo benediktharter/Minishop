@@ -17,9 +17,9 @@
 	    			},{
 	    				attr:"total",
 	    				label:"'.__('Subtotal','minishop').'",
-	    				view:"currency" 
+	    				view:"currency"
 	    			},{
-	    				view:"remove", 
+	    				view:"remove",
 	    				text:"'.__('Remove','minishop').'",
 	    				label:"'.__('Options','minishop').'"
 	    			}
@@ -37,16 +37,45 @@
     			taxRate:'.Option::get('ms_tax').',
     			taxShipping:true,
     			afterAdd:function(){
-    				alert("'.Option::get('ms_afadd').'");
-                    location.reload();
+
+            swal({
+              title: "Success",
+              text: "'.Option::get('ms_afadd').'",
+              type: "success",
+              confirmButtonColor: "#DD6B55",
+              closeOnConfirm: false
+            },function(){
+              location.reload();
+            })
+
+
     			},
     			checkoutFail:function(){
-    				alert("'.Option::get('ms_chkfail').'");
-                    location.reload();
+
+            swal({
+              title: "Error",
+              text: "'.Option::get('ms_chkfail').'",
+              type: "error",
+              confirmButtonColor: "#DD6B55",
+              closeOnConfirm: false
+            },function(){
+              location.reload();
+            })
+
     			},
     			beforeCheckout:function(){
-    				alert("'.Option::get('ms_befchk').'");
-                    location.reload();
+
+            swal({
+              title: "Success",
+              text: "'.Option::get('ms_befchk').'",
+              type: "success",
+              confirmButtonColor: "#DD6B55",
+              closeOnConfirm: false
+            },function(){
+              location.reload();
+            })
+
+
     			}
     		});
             var t = setTimeout(function(){
@@ -56,8 +85,8 @@
                         check.style.display="none";
                     }else{
                         check.style.display="inline-block";
-                    }   
-                }           
+                    }
+                }
                 clearTimeout(t);
             },500);
 
@@ -66,36 +95,94 @@
   }else if (Page::Slug() == 'shop'){
     echo'<script type="text/javascript">
     		simpleCart({
-    			afterAdd:function(){
-    				alert("'.Option::get('ms_afadd').'");
-                    location.reload();
-    			},
-    			checkoutFail:function(){
-    				alert("'.Option::get('ms_chkfail').'");
-                    location.reload();
-    			},
-    			beforeCheckout:function(){
-    				alert("'.Option::get('ms_befchk').'");
-                    location.reload();
-    			}
+            afterAdd:function(){
+
+              swal({
+                title: "Success",
+                text: "'.Option::get('ms_afadd').'",
+                type: "success",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+
+            },
+            checkoutFail:function(){
+
+              swal({
+                title: "Error",
+                text: "'.Option::get('ms_chkfail').'",
+                type: "error",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+            },
+            beforeCheckout:function(){
+            
+              swal({
+                title: "Success",
+                text: "'.Option::get('ms_befchk').'",
+                type: "success",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+
+            }
     		});
 
 </script>';
   }else if (Page::Slug() == 'item'){
     echo'<script type="text/javascript">
     		simpleCart({
-    			afterAdd:function(){
-    				alert("'.Option::get('ms_afadd').'");
-                    location.reload();
-    			},
-    			checkoutFail:function(){
-    				alert("'.Option::get('ms_chkfail').'");
-                    location.reload();
-    			},
-    			beforeCheckout:function(){
-    				alert("'.Option::get('ms_befchk').'");
-                    location.reload();
-    			}
+            afterAdd:function(){
+
+              swal({
+                title: "Success",
+                text: "'.Option::get('ms_afadd').'",
+                type: "success",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+
+            },
+            checkoutFail:function(){
+
+              swal({
+                title: "Error",
+                text: "'.Option::get('ms_chkfail').'",
+                type: "error",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+            },
+            beforeCheckout:function(){
+            
+              swal({
+                title: "Success",
+                text: "'.Option::get('ms_befchk').'",
+                type: "success",
+                confirmButtonColor: "#DD6B55",
+                closeOnConfirm: false
+              },function(){
+                location.reload();
+              })
+
+
+            }
     		});
 </script>';
   }
