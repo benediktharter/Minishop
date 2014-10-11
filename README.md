@@ -10,9 +10,9 @@ Cart module  plugin for Monstra cms
 - Copy minishop folder in plugins folder.
 - Copy theme templates in theme folder.
 - Create 3 pages like this.
-- Shop ( slug = **shop** ) - **products.template.php**
-    - Product ( slug = **item** ) - **product.template.php**
-    - Total ( slug = **items** ) - **total.template.php**
+- Shop ( slug = **shop** ) - **products.template.php**  
+    - Product ( slug = **item** ) - **product.template.php** Parent of shop
+    - Total ( slug = **items** ) - **total.template.php** Parent of shop
 - Add Cart code in menu  
 
         <?php echo miniShop::getInfo(); ?>
